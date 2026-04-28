@@ -3,7 +3,12 @@ import { Download } from 'lucide-react'
 
 const AnimatedborderButton = () => {
   return (
-    <button className='animated-border group relative inline-flex items-center justify-center gap-1.5 rounded-full border border-border bg-transparent px-6 py-3 text-base font-medium text-foreground transition-all duration-500 hover:border-primary/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'>
+    <a
+      href='/SAMUEL ORANUSI CV.pdf'
+      download='Samuel-Oranusi-CV.pdf'
+      className='animated-border group relative inline-flex items-center justify-center gap-1.5 rounded-full border border-border bg-transparent px-6 py-3 text-base font-medium text-foreground transition-all duration-500 hover:border-primary/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
+      aria-label='Download CV'
+    >
       {/* Animated SVG border */}
       <svg
         className='pointer-events-none absolute inset-0 h-full w-full'
@@ -32,7 +37,7 @@ const AnimatedborderButton = () => {
         <Download className='h-4 w-4' />
         Download CV
       </span>
-    </button>
+    </a>
   )
 }
 

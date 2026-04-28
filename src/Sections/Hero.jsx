@@ -76,7 +76,7 @@ const Hero = () => {
               {[
                 { icon: FaGithub, href: '#' },
                 { icon: FaLinkedinIn, href: '#' },
-                { icon: FaXTwitter, href: '#' },
+                { icon: FaXTwitter, href: '#' }, 
               ].map((social, idx) => (
                 <a
                   key={idx}
